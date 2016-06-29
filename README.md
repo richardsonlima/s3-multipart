@@ -52,7 +52,7 @@ http://aws.typepad.com/aws/2010/11/amazon-s3-multipart-upload.html
 			    
 E.g:
 ```bash
-mY=$(date +%m-%Y) && ./s3-mp-upload.py -f -np 20 -s 1000 -t 20 -v /mnt/disc/amazon-s3/full/06-2016/*.tar.gz s3://backup-bucket/backup/full/$mY/
+mY=$(date +%m-%Y) && ./s3-mp-upload.py -f -np 20 -s 1000 -t 20 -v /mnt/disc/amazon-s3/full/$mY/*.tar.gz s3://backup-bucket/backup/full/$mY/
 ```
 
 # Credits
