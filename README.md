@@ -1,4 +1,8 @@
 Utilities to do parallel upload/download with Amazon S3
+https://aws.amazon.com/blogs/aws/amazon-s3-multipart-upload/
+
+![alt tag](https://media.amazonwebservices.com/blog/s3_multipart_upload.png)
+
 
 # Install with Pip 
 
@@ -44,7 +48,7 @@ http://aws.typepad.com/aws/2010/11/amazon-s3-multipart-upload.html
 
     optional arguments:
       -h, --help            show this help message and exit
-      -n NUM_PROCESSES, --num-processes NUM_PROCESSES
+      -np NUM_PROCESSES, --num-processes NUM_PROCESSES
 			    Number of processors to use
       -f, --force           Overwrite an existing S3 key
       -s SPLIT, --split SPLIT
