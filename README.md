@@ -49,6 +49,11 @@ http://aws.typepad.com/aws/2010/11/amazon-s3-multipart-upload.html
       -f, --force           Overwrite an existing S3 key
       -s SPLIT, --split SPLIT
 			    Split size, in Mb
+			    
+E.g:
+```bash
+mY=$(date +%m-%Y) && ./s3-mp-upload.py -f -np 20 -s 1000 -t 20 -v /mnt/disc/amazon-s3/full/06-2016/*.tar.gz s3://backup-bucket/backup/full/$mY/
+```
 
 # Credits
 
@@ -58,3 +63,4 @@ https://github.com/boto/boto
 # License
 
 Copyright 2012, David Arthur under Apache License, v2.0. See `LICENSE`
+Copyright 2016, Richardson Lima under Apache License, v2.0. See `LICENSE`
